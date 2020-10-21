@@ -307,6 +307,7 @@
 						@include vendor('animation-delay', ($delay-nav-icons + ($x * $delay-nav-icon)) + '');
 					}
 				}
+				background-color: red;
 			}
 
 			a {
