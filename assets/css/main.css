@@ -888,6 +888,10 @@ input, select, textarea {
 
 		/* BG */
 
+			#bg {
+				background-position: -600px center;
+			}
+
 			@-moz-keyframes bg {
 				0% {
 					-moz-transform: translate3d(0,0,0);
