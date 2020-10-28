@@ -5,13 +5,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<script src="https://kit.fontawesome.com/a802235dd7.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/a802235dd7.js" crossorigin="anonymous">
+			function btnPlay() {
+				var audio = document.getElementById("audio");
+				audio.play();
+			}
+		</script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
-			<div id="overlay"></div>
+			<!-- <div id="overlay"></div> -->
 			<div id="main">
 
 				<!-- Header -->
@@ -33,6 +38,8 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<span class="copyright">&copy; Copyright 2020, Lost Boys Technologies</span>
+						<!-- <button onclick="btnPlay()" class="big-button">Alert</button>
+						<audio id="audio" src="./assets/css/images/alien_danger.wav"></audio> -->
 					</footer>
 
 			</div>
