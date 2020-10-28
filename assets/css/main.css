@@ -216,12 +216,12 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #00001A url("images/test.jpg") bottom left;
+		background: #00001A url("https://res.cloudinary.com/dqlpq0s6t/image/upload/v1603917126/space_bg_i0ikpt.jpg") center center;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
-		position: fixed;
+		position: absolute;
 		top: 0;
 	}
 
