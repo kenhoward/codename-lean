@@ -9,7 +9,7 @@ function gameOverMan() {
     audio.src='./aliens_game_over2.wav';
     audio.play();
 
-    // document.getElementById("gameOver").style.display = "block";
+    document.getElementById("gameOver").style.display = "block";
 }
 
 function fireModal() {

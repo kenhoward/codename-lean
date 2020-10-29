@@ -1137,7 +1137,7 @@ input, select, textarea {
 		} }
 
 /* Explosion */
-	/* #gameOver { display: none; } */
+	#gameOver { display: none; }
   
 	.pyro > .before, .pyro > .after {
 	position: absolute;
