@@ -34,7 +34,7 @@ function fireModal() {
         '<button id="toggle" class="btn btn-primary">' +
         'Toggle' +
         '</button>',
-    timer: 7000,
+    timer: 9000,
     willOpen: () => {
         const content = Swal.getContent()
         const $ = content.querySelector.bind(content)
