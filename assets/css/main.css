@@ -43,8 +43,9 @@ button {
 	font-family: inherit;
 }
 
-button.big-button {
+button.self-destruct {
 	padding: .1em .2em;
+	margin: 0 0 10px 10px;
 	border: 2px solid var(--colorShadeA);
 	border-radius: 1em;
 	background: var(--colorShadeE);
@@ -52,7 +53,7 @@ button.big-button {
 	transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
 
-button.big-button::before {
+button.self-destruct::before {
 	position: absolute;
 	content: '';
 	width: 100%;
@@ -68,11 +69,11 @@ button.big-button::before {
 	transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
   
-button.big-button:active {
+button.self-destruct:active {
 	transform: translate(0em, 0.35em);
 }
 
-button.big-button:active::before {
+button.self-destruct:active::before {
 	transform: translate3d(0, 0, -1em);
 	box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
 }
