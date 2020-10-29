@@ -10,6 +10,7 @@ function gameOverMan() {
     audio.play();
 
     document.getElementById("gameOver").style.display = "block";
+    document.getElementById("selfDestructButton").style.display = "none";
 }
 
 function fireModal() {
@@ -18,17 +19,17 @@ function fireModal() {
     danger();
 
     Swal.fire({
-    title: 'Self Destruction Initiated!',
+    title: 'SELF DESTRUCTION INITIATED!',
     html:
         'I will close in <strong></strong> seconds.<br/><br/>' +
         '<button id="increase" class="btn btn-warning">' +
         'I need 5 more seconds!' +
         '</button><br/><br/>' +
         '<button id="stop" class="btn btn-danger">' +
-        'Please stop the timer!!' +
+        'Cancel Self Destruct' +
         '</button><br/><br/>' +
         '<button id="resume" class="btn btn-success" disabled>' +
-        'Phew... you can restart now!' +
+        'Don\'t click this!' +
         '</button><br/><br/>' +
         '<button id="toggle" class="btn btn-primary">' +
         'Toggle' +
