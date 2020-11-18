@@ -623,6 +623,10 @@ input, select, textarea {
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
+
+			/* background: -webkit-linear-gradient(#FCEABB, #F8B500);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; */
 		}
 
 		#header p {
