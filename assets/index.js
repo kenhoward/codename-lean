@@ -20,55 +20,44 @@ function fireModal() {
 
     Swal.fire({
     title: 'SELF DESTRUCTION INITIATED!',
-    html:
-        'I will close in <strong></strong> seconds.<br/><br/>' +
-        '<button id="increase" class="btn btn-warning">' +
-        'I need 5 more seconds!' +
-        '</button><br/><br/>' +
-        '<button id="stop" class="btn btn-danger">' +
-        'Cancel Self Destruct' +
-        '</button><br/><br/>' +
-        '<button id="resume" class="btn btn-success" disabled>' +
-        'Don\'t click this!' +
-        '</button><br/><br/>' +
-        '<button id="toggle" class="btn btn-primary">' +
-        'Toggle' +
-        '</button>',
-    timer: 9000,
+    html: 'You have <strong></strong> seconds before utter annihilation.<br/><br/>',
+    timer: 10000,
+    showConfirmButton: false,
     willOpen: () => {
         const content = Swal.getContent()
         const $ = content.querySelector.bind(content)
 
-        const stop = $('#stop')
-        const resume = $('#resume')
-        const toggle = $('#toggle')
-        const increase = $('#increase')
+        // TODO saving for future reference
+        // const stop = $('#stop')
+        // const resume = $('#resume')
+        // const toggle = $('#toggle')
+        // const increase = $('#increase')
 
-        Swal.showLoading()
+        // Swal.showLoading()
 
-        function toggleButtons () {
-        stop.disabled = !Swal.isTimerRunning()
-        resume.disabled = Swal.isTimerRunning()
-        }
+        // function toggleButtons () {
+        // stop.disabled = !Swal.isTimerRunning()
+        // resume.disabled = Swal.isTimerRunning()
+        // }
 
-        stop.addEventListener('click', () => {
-        Swal.stopTimer()
-        toggleButtons()
-        })
+        // stop.addEventListener('click', () => {
+        // Swal.stopTimer()
+        // toggleButtons()
+        // })
 
-        resume.addEventListener('click', () => {
-        Swal.resumeTimer()
-        toggleButtons()
-        })
+        // resume.addEventListener('click', () => {
+        // Swal.resumeTimer()
+        // toggleButtons()
+        // })
 
-        toggle.addEventListener('click', () => {
-        Swal.toggleTimer()
-        toggleButtons()
-        })
+        // toggle.addEventListener('click', () => {
+        // Swal.toggleTimer()
+        // toggleButtons()
+        // })
 
-        increase.addEventListener('click', () => {
-        Swal.increaseTimer(5000)
-        })
+        // increase.addEventListener('click', () => {
+        // Swal.increaseTimer(5000)
+        // })
 
         timerInterval = setInterval(() => {
         Swal.getContent().querySelector('strong')
